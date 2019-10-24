@@ -57,4 +57,6 @@ az aks browse --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUST
 
 Then open a browser and go to http://127.0.0.1:8001
 
-![It is Magic](https://github.com/squasta/AzureKubernetesService-Terraform/blob/master/Magic.gif)
+![It is Magic](https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif)
+
+
