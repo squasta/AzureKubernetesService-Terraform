@@ -40,7 +40,7 @@ For more information about Terraform & Azure, few additional online resources :
 
 - My blog : https://stanislas.io
 - Julien's blog : https://blog.jcorioland.io/
-- Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#enable_auto_scaling
+- Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html
 - Azure Terraform Provider : https://github.com/terraform-providers/terraform-provider-azurerm
 - Azure Terraform Provider AKS Cluster : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/azurerm/resource_arm_kubernetes_cluster.go
 
@@ -48,8 +48,13 @@ After deployment is succeeded, you can check your cluster using portal or better
 az aks show --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER -o jsonc
 
 Get your kubeconfig using :
+
 az aks get-credentials --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER --admin
 
-Connect to Kubernetes Dashboard
+Connect to Kubernetes Dashboard :
+
 az aks browse --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER
+
 Then open a browser and go to http://127.0.0.1:8001
+
+![It is Magic](https://github.com/squasta/AzureKubernetesService-Terraform/blob/master/Magic.gif)
