@@ -1,6 +1,8 @@
-=============================================================================================================
+# Azure Kubernetes Service Cluster deployment with Terraform
+
+--------------------------------------------------------------------------------------------------------
+
 = Tested with success with Terraform v0.12.12 + Azurerm provider version v1.35.0 + Kubernetes provider v1.9.0
-=============================================================================================================
 
 This is a set of Terraform files used to deploy an Azure Kubernetes Cluster with all new fall 2019 features :
 
@@ -34,11 +36,12 @@ To deploy this infrastructure :
 6- Apply your terraform deployment : terraform apply --var-file=maconf.tfvars
 
 For more information about Terraform & Azure, few additional online resources :
-My blog : https://stanislas.io
-Julien's blog : https://blog.jcorioland.io/
-Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#enable_auto_scaling
-Azure Terraform Provider : https://github.com/terraform-providers/terraform-provider-azurerm
-Azure Terraform Provider AKS Cluster : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/azurerm/resource_arm_kubernetes_cluster.go
+
+- My blog : https://stanislas.io
+- Julien's blog : https://blog.jcorioland.io/
+- Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#enable_auto_scaling
+- Azure Terraform Provider : https://github.com/terraform-providers/terraform-provider-azurerm
+- Azure Terraform Provider AKS Cluster : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/azurerm/resource_arm_kubernetes_cluster.go
 
 After deployment is succeeded, you can check your cluster using portal or better with azure cli and the following command: 
 az aks show --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER -o jsonc
