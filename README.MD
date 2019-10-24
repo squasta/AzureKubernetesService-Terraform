@@ -24,7 +24,7 @@ On Kubernetes, these Terraform files will :
 
 Prerequisites :
 - An Azure Subscription with enough privileges (create RG, AKS...)
-- Azure CLI 2.x
+- Azure CLI 2.0.75
    And you need to activate features that are still in preview : https://github.com/squasta/AzureKubernetesService-Labs/blob/master/0-PrepareAzure.txt
 - Terraform CLI 1.2 or >
 
