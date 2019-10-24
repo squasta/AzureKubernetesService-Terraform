@@ -1,6 +1,8 @@
-=============================================================================================================
+# Azure Kubernetes Service Cluster deployment with Terraform
+
+--------------------------------------------------------------------------------------------------------
+
 = Tested with success with Terraform v0.12.12 + Azurerm provider version v1.35.0 + Kubernetes provider v1.9.0
-=============================================================================================================
 
 This is a set of Terraform files used to deploy an Azure Kubernetes Cluster with all new fall 2019 features :
 
@@ -21,9 +23,9 @@ On Kubernetes, these Terraform files will :
 
 Prerequisites :
 - An Azure Subscription with enough privileges (create RG, AKS...)
-- Azure CLI 2.0.74 or >
+- Azure CLI 2.x
    And you need to activate features that are still in preview : https://github.com/squasta/AzureKubernetesService-Labs/blob/master/0-PrepareAzure.txt
-- Terraform CLI 1.12 or >
+- Terraform CLI 1.2 or >
 
 To deploy this infrastructure :
 1- Log to your Azure subscription (az login)
@@ -35,7 +37,7 @@ To deploy this infrastructure :
 
 For more information about Terraform & Azure, few additional online resources :
 
-My blog : https://stanislas.io
+- My blog : https://stanislas.io
 - Julien's blog : https://blog.jcorioland.io/
 - Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html#enable_auto_scaling
 - Azure Terraform Provider : https://github.com/terraform-providers/terraform-provider-azurerm
