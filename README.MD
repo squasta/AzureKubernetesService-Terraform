@@ -1,8 +1,9 @@
 # Azure Kubernetes Service Cluster deployment with Terraform
 
---------------------------------------------------------------------------------------------------------
 
 = Tested with success with Terraform v0.12.12 + Azurerm provider version v1.35.0 + Kubernetes provider v1.9.0
+
+--------------------------------------------------------------------------------------------------------
 
 This is a set of Terraform files used to deploy an Azure Kubernetes Cluster with all new fall 2019 features :
 
