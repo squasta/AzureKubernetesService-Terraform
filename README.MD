@@ -33,8 +33,8 @@ To deploy this infrastructure :
 2- Create an Azure Key Vault and create all secrets defined in datasource.tf
 3- Define the value of each variable in .tf and .tfvars files
 4- Initialize your terraform deployment : terraform init
-5- Plan your terraform deployment : terraform plan --var-file=maconf.tfvars
-6- Apply your terraform deployment : terraform apply --var-file=maconf.tfvars
+5- Plan your terraform deployment : terraform plan --var-file=myconf.tfvars
+6- Apply your terraform deployment : terraform apply --var-file=myconf.tfvars
 
 For more information about Terraform & Azure, few additional online resources :
 
