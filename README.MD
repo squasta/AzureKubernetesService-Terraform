@@ -22,13 +22,13 @@ On Kubernetes, these Terraform files will :
 - Create a Tiller service account and a ClusterRole Binding
 - Create a ClusterRole Binding to give cluster-admin permissions to Kubernetes-Dashboard
 
-Prerequisites :
+__Prerequisites :__
 - An Azure Subscription with enough privileges (create RG, AKS...)
 - Azure CLI 2.0.75 : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
    And you need to activate features that are still in preview : https://github.com/squasta/AzureKubernetesService-Labs/blob/master/0-PrepareAzure.txt
 - Terraform CLI 0.12.12 or > : https://www.terraform.io/downloads.html
 
-To deploy this infrastructure :
+__To deploy this infrastructure :__
 1. Log to your Azure subscription (az login)
 2. Create an Azure Key Vault and create all secrets defined in datasource.tf
 3. Define the value of each variable in .tf and .tfvars files
@@ -36,8 +36,7 @@ To deploy this infrastructure :
 5. Plan your terraform deployment : `terraform plan --var-file=myconf.tfvars`
 6. Apply your terraform deployment : `terraform apply --var-file=myconf.tfvars`
 
-For more information about Terraform & Azure, few additional online resources :
-
+__For more information about Terraform & Azure, few additional online resources :__
 - My blog : https://stanislas.io
 - Julien's blog : https://blog.jcorioland.io/
 - Terraform documentation : https://www.terraform.io/docs/providers/azurerm/r/kubernetes_cluster.html
