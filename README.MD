@@ -29,12 +29,12 @@ Prerequisites :
 - Terraform CLI 1.2 or >
 
 To deploy this infrastructure :
-1- Log to your Azure subscription (az login)
-2- Create an Azure Key Vault and create all secrets defined in datasource.tf
-3- Define the value of each variable in .tf and .tfvars files
-4- Initialize your terraform deployment : terraform init
-5- Plan your terraform deployment : terraform plan --var-file=myconf.tfvars
-6- Apply your terraform deployment : terraform apply --var-file=myconf.tfvars
+1. Log to your Azure subscription (az login)
+2. Create an Azure Key Vault and create all secrets defined in datasource.tf
+3. Define the value of each variable in .tf and .tfvars files
+4. Initialize your terraform deployment : terraform init
+5. Plan your terraform deployment : terraform plan --var-file=myconf.tfvars
+6. Apply your terraform deployment : terraform apply --var-file=myconf.tfvars
 
 For more information about Terraform & Azure, few additional online resources :
 
