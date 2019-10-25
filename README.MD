@@ -26,7 +26,7 @@ Prerequisites :
 - An Azure Subscription with enough privileges (create RG, AKS...)
 - Azure CLI 2.0.75 : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
    And you need to activate features that are still in preview : https://github.com/squasta/AzureKubernetesService-Labs/blob/master/0-PrepareAzure.txt
-- Terraform CLI 1.2 or >
+- Terraform CLI 0.12.12 or > : https://www.terraform.io/downloads.html
 
 To deploy this infrastructure :
 1. Log to your Azure subscription (az login)
