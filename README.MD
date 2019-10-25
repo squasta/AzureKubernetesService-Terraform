@@ -24,7 +24,7 @@ On Kubernetes, these Terraform files will :
 
 Prerequisites :
 - An Azure Subscription with enough privileges (create RG, AKS...)
-- Azure CLI 2.0.75
+- Azure CLI 2.0.75 : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
    And you need to activate features that are still in preview : https://github.com/squasta/AzureKubernetesService-Labs/blob/master/0-PrepareAzure.txt
 - Terraform CLI 1.2 or >
 
@@ -33,8 +33,8 @@ To deploy this infrastructure :
 2. Create an Azure Key Vault and create all secrets defined in datasource.tf
 3. Define the value of each variable in .tf and .tfvars files
 4. Initialize your terraform deployment : terraform init
-5. Plan your terraform deployment : terraform plan --var-file=myconf.tfvars
-6. Apply your terraform deployment : terraform apply --var-file=myconf.tfvars
+5. Plan your terraform deployment : `terraform plan --var-file=myconf.tfvars`
+6. Apply your terraform deployment : `terraform apply --var-file=myconf.tfvars`
 
 For more information about Terraform & Azure, few additional online resources :
 
@@ -45,15 +45,15 @@ For more information about Terraform & Azure, few additional online resources :
 - Azure Terraform Provider AKS Cluster : https://github.com/terraform-providers/terraform-provider-azurerm/blob/master/azurerm/resource_arm_kubernetes_cluster.go
 
 After deployment is succeeded, you can check your cluster using portal or better with azure cli and the following command: 
-az aks show --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER -o jsonc
+`az aks show --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER -o jsonc`
 
 Get your kubeconfig using :
 
-az aks get-credentials --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER --admin
+`az aks get-credentials --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER --admin`
 
 Connect to Kubernetes Dashboard :
 
-az aks browse --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER
+`az aks browse --resource-group NAMEOFYOURRESOURCEGROUP --name NAMEOFYOURAKSCLUSTER`
 
 Then open a browser and go to http://127.0.0.1:8001
 
