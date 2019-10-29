@@ -4,7 +4,7 @@ data "azurerm_key_vault" "terraform_vault" {
 }
 
 data "azurerm_key_vault_secret" "ssh_public_key" {
-  name         = "ClePubliqueSSH"
+  name         = "ClePubliqueSSH"    # must looks like "ssh-rsa AAAABxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx email@domaine.name"
   key_vault_id = data.azurerm_key_vault.terraform_vault.id
 }
 
