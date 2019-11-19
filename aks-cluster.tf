@@ -18,8 +18,8 @@ resource "azurerm_kubernetes_cluster" "Terra_aks" {
       min_count           = pool.value.min_count      # minimum number of nodes with AKS Autoscaler
       max_count           = pool.value.max_count      # maximum number of nodes with AKS Autoscaler
       vm_size         = pool.value.vm_size
-      availability_zones = pool.value.availability_zones
-      os_type         = pool.value.os_type  # example : [1, 2, 3]
+      availability_zones = pool.value.availability_zones  # example : [1, 2, 3]
+      os_type         = pool.value.os_type  # example :linux, windows
       os_disk_size_gb = pool.value.os_disk_size_gb
       type            = pool.value.type
       max_pods        = pool.value.max_pods   # between 30 and 100
